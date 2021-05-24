@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,600,700,900&display=swap');
+:root {
+    --green: #8bc34a;
+    --gray: rgb(68, 75, 81);
+    --white: #fff;
+    --fontSize: 16px;
+    --transition: .3s ease;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: var(--fontSize);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+ul {
+    list-style: none;
+}
+/*************
+nav
+**************/
+nav {
+    color: black;
+}
+nav .navbar-brand {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+nav .nav-link {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+nav.navbar .nav-link.active,
+nav.navbar .nav-link:hover {
+  color: var(--green) !important;
+}
+/*************
+slider
+**************/
+.carousel-inner,
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-caption {
+    height: 100%;
+}
+.carousel-caption h1 {
+    font-size: 5rem;
+}
+.carousel-inner button.btn {
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: black;
+}
+/*************
+about
+**************/
+.about h2 {
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+.about  h2 span {
+    font-style: italic;
+    color: var(--green);
+    font-weight: 900;
+}
+.about button {
+    color: var(--green);
+    font-weight: 600;
+    font-size: 1rem;
+}
+.about h3 {
+    color: var(--green);
+    font-weight: 600;
+}
+/*************
+services
+**************/
+.services h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.services h2::after {
+    display: block;
+    content: "";
+    width: 200px;
+    height: 2px;
+    background: var(--green);
+    margin: 25px auto;
+}
+.services i {
+    font-size: 2rem;
+    color: var(--green);
+    padding-bottom: 20px;
+}
+/*************
+new
+**************/
+.new .second {
+    background: var(--white);
+    height: 70%;
+    padding: 100px 50px;
+    position: relative;
+    top: 100px;
+    right: 80px;
+}
+.new h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+.new h2::after {
+    display: block;
+    content: "";
+    width: 80px;
+    height: 2px;
+    background: var(--green);
+    margin: 25px 0;
+}
+.new p {
+    margin-bottom: 0;
+}
+.new span {
+    font-size: .9rem;
+    font-weight: 600;
+}
+/*************
+play
+**************/
+.play {
+    background-image: linear-gradient(rgba(68, 75, 81,.4),rgba(68,75,81,.4)),url(img/experience.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+.play div {
+    height: 70vh;
+}
+.play h2 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+.play i {
+    font-size: 6rem;
+}
+/*************
+footer
+**************/
+footer {
+    background: var(--gray);
+}
+footer h3 {
+    color: var(--white);
+    font-weight: 600;
+}
+footer p,
+footer a {
+    color: rgb(182, 175, 175);
+    font-weight: 600;
+}
+footer .col-md-4 button {
+    border: 1px solid var(--green);
+    color: black;
+    border-radius: 0;
+    position: relative;
+    padding: 9px 15px;
+    top: -3px;
+    right: 6px;
+}
+footer .social a {
+    color: var(--green);
+    font-size: 1.5rem;
+}
+/*************
+responsive
+**************/
+@media(max-width:767px) {
+    .carousel {
+        height: 50vh;
+      }
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
+    .carousel-inner button.btn {
+        font-size: 1rem;
+    }
+    header p {
+        font-size: .8rem;
+    }
+    header .btn .btn-dark {
+        padding: 15px 10px !important;
+    }
+    .about h2 {
+        font-size: 2rem;
+    }
+    .services h2 {
+        font-size: 2rem;
+    }
+    .new .second {
+        background: var(--white);
+        height: 70%;
+        padding: 100px 50px;
+        position: relative;
+        top: 0px;
+        right: 0px;
+    }
+    .new h2 {
+        font-size: 2rem;
+    }
+    .play h2 {
+        font-size: 2rem;
+    }
+    footer  {
+        text-align: center;
+    }
+}
